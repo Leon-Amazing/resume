@@ -1,0 +1,44 @@
+body {
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+ul,
+li,
+h1,
+h2,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 8px 5px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 2000;
+}
+
+h2 {
+  font-size: 20px;
+}
+h3 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+}
+
+.skill-tag,
+a {
+  font-weight: 800;
+  cursor: pointer;
+
+  &:hover {
+    color: #409eff;
+  }
+}
