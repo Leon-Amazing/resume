@@ -24,6 +24,10 @@ import { list } from './list';
 </script>
 
 <style lang="scss" scoped>
+.project-item {
+  margin: 10px 0;
+  margin-bottom: 12px;
+}
 .project-title {
   padding-right: 40px;
   display: flex;

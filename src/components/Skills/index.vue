@@ -14,6 +14,9 @@ import { list } from './list';
 </script>
 
 <style lang="scss" scoped>
+.skills {
+  padding-top: 35px;
+}
 .skill {
   margin-bottom: 10px;
 }
