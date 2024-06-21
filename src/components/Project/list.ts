@@ -1,8 +1,57 @@
 export const list = [
   {
     title: {
+      name: '中农金研修-APP',
+      date: '2023.10 - 至今'
+    },
+    content: [
+      {
+        title: '项目介绍',
+        children: ['中农金研修是一个汇聚行业课程资源，构建自有数据库，为用户提供包括但不限于直播、公开课、知识付费专栏、报刊、资讯等培训内容的行业知识服务平台。']
+      },
+      {
+        title: '技术栈',
+        children: ['框架： Ionic + cty-mobile-ui + Angular + Typescript + Cordova；', '构建、CI/CD ： AndroidX + gitlab CI + 阿里云']
+      },
+      {
+        title: '工作和成就',
+        children: [
+          '1. 基于 ionic 的框架进行组件二次开发，发布 video-player、lottery、questionnarie、keyboard、network 等组件。提升开发效率 50%，代码量减少 60%；',
+          '2. 负责 直播模块的开发，对接polyvSDK，封装直播相关业务组件，兼容适配android、ios、公众号等平台平稳运行。',
+          '3. 通过优化页面加载和渲染过程，实现应用的响应速度提升。使用懒加载技术和减少不必要的网络请求，成功将页面加载时间缩短了20%',
+        ]
+      }
+    ]
+  },
+  {
+    title: {
+      name: '专壹预约-小程序',
+      date: '2023.07 - 2023.09'
+    },
+    content: [
+      {
+        title: '项目介绍',
+        children: ['专壹预约是一个线上预约自习室项目。']
+      },
+      {
+        title: '技术栈',
+        children: ['框架： 原生小程序API + Vant +JavaScript', '构建、CI/CD ： gitlab CI + 阿里云']
+      },
+      {
+        title: '工作和成就',
+        children: [
+          '1. 负责 前端性能优化解决方案，搭建项目结构、代码规范等；',
+          '2. 基于 Vant 封装公共组件。如： dialog、book-card、list-item，代码量减少 50%；',
+          '3. 根据设计稿和用户体验原则，小程序的界面100%确保布局合理、美观，与产品风格一致',
+          '4. 优化小程序的加载速度和渲染性能，如首页缓存、骨架屏、无限滚动等，渲染性能提高 20%；。'
+        ]
+      }
+    ]
+  },
+  {
+    title: {
       name: '华毓安全-后台',
-      date: '2023.01 - 至今'
+      date: '2023.01 - 2023.06'
     },
     content: [
       {
@@ -26,7 +75,7 @@ export const list = [
   },
   {
     title: {
-      name: '铃铛保-App',
+      name: '铃铛保-APP',
       date: '2022.06 - 2022.12'
     },
     content: [
@@ -50,7 +99,7 @@ export const list = [
   },
   {
     title: {
-      name: '雨途-智慧水务',
+      name: '雨途-智慧水务-官网+CMS',
       date: '2020.03 - 2020.11'
     },
     content: [
