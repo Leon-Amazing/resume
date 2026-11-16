@@ -1,62 +1,36 @@
 export const list = [
   {
-    title: {
-      name: 'Blog 个人博客',
-      date: '2022.01 - 至今'
-    },
-    content: [
+    "name": "cty-cms-ui",
+    "content": "参与企业后台组件库建设，覆盖表格、表单、上传、资源排期及权限管理等 **39 个组件模块**；统一 OSS、COS、OBS、S3 上传结果与队列处理。",
+    "links": [
       {
-        title: '项目介绍：',
-        children: ['Blog 是一个基于 vuepress 实现的个人博客项目。']
-      },
-      {
-        title: '项目地址：',
-        children: ['https://leon-amazing.github.io/blog/']
-      },
-      {
-        title: '工作成就：',
-        children: ['1. 按时总结，文档输出，方便查阅；','2. 不断完善升级，更新迭代。']
+        "label": "npm",
+        "url": "https://www.npmjs.com/package/cty-cms-ui"
       }
     ]
   },
   {
-    title: {
-      name: '前端工具导航',
-      date: '2023.01 - 至今'
-    },
-    content: [
+    "name": "cty-mui-core",
+    "content": "参与基于 Stencil / Web Components 的跨框架组件库维护，沉淀 **54 个组件**并生成 Angular、Vue 适配层；实现动态尺寸虚拟列表。",
+    "links": [
       {
-        title: '项目介绍：',
-        children: ['一个一直更新的前端工具网站。']
-      },
-      {
-        title: '项目地址：',
-        children: ['https://leon-amazing.github.io/navigation-library/']
-      },
-      {
-        title: '工作成就：',
-        children: ['不断更新总结前端知识，方便快速查找定位。']
+        "label": "npm",
+        "url": "https://www.npmjs.com/package/cty-mui-core"
       }
     ]
   },
-  // {
-  //   title: {
-  //     name: 'Booker UI',
-  //     date: '2020.06 - 2020.10'
-  //   },
-  //   content: [
-  //     {
-  //       title: '项目介绍：',
-  //       children: ['Booker UI 是一个基于Vue2的UI组件库，采用TDD/BDD 驱动的方式写测试用例，并接入 Travis-CI 做了持续集成，保证了项目质量。']
-  //     },
-  //     {
-  //       title: '项目地址：',
-  //       children: ['https://bookerdrew.github.io/Booker-UI']
-  //     },
-  //     {
-  //       title: '工作成就：',
-  //       children: ['1. 组件库设计和项目初始化，复杂组件的API设计、组件的粒度拆分和单元测试；', '2. 组件库文档的建立和组件示例的完善，保证组件库的维护和推广。']
-  //     }
-  //   ]
-  // }
+  {
+    "name": "个人技术博客",
+    "content": "持续整理前端实践、React 和数据可视化案例，包含虚拟列表、图像标注与 WebGL 示例。",
+    "links": [
+      {
+        "label": "博客",
+        "url": "https://leon-amazing.github.io/blog/"
+      },
+      {
+        "label": "前端实践",
+        "url": "https://leon-amazing.github.io/project-practice/"
+      }
+    ]
+  }
 ];

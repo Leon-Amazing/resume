@@ -1,57 +1,19 @@
 <template>
-  <card title="个人作品" class="project">
-    <div class="project-item" v-for="(project, idx) in list" :key="idx">
-      <div class="project-title">
-        <h3>{{ project.title.name }}</h3>
-        <h3>{{ project.title.date }}</h3>
+  <Card title="组件库与个人作品">
+    <article class="entry" v-for="item in list" :key="item.name">
+      <div class="entry-heading"><h3>{{ item.name }}</h3></div>
+      <div class="work-links">
+        <div v-for="link in item.links" :key="link.url">
+          <span>{{ link.label }}：</span><a :href="link.url" target="_blank" rel="noopener noreferrer">{{ link.url }}</a>
+        </div>
       </div>
-      <ul>
-        <li class="project-desc" v-for="(content, idx) in project.content" :key="idx">
-          <div class="flex">
-            <h4>{{ content.title }}</h4>
-            <div class="xxx">
-              <p v-for="(item, idx) in content.children" :key="idx" v-html="addTag(item)"></p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </card>
+      <p><RichText :text="item.content" /></p>
+    </article>
+  </Card>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import Card from '../Card.vue';
-import { addTag } from '@/utils/tools';
+import RichText from '../RichText.vue';
 import { list } from './list';
 </script>
-
-<style lang="scss" scoped>
-.project-title {
-  padding-right: 40px;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 800;
-}
-
-.project-desc {
-  padding-right: 40px;
-}
-ul {
-  padding-left: 20px;
-}
-.flex {
-  display: flex;
-  justify-content: start;
-  align-content: flex-start;
-  h4 {
-    margin: 0;
-    width: 100px;
-  }
-  .xxx {
-    flex: 1 1;
-    p {
-      margin: 0;
-    }
-  }
-}
-</style>

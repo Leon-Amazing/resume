@@ -1,26 +1,11 @@
 <template>
-  <card title="专业技能" class="skills">
-    <div v-for="(skills, index) in list" :key="'skills' + index" class="skill">
-      <span class="blod">{{ skills.title }}</span>
-      <span v-html="addTag(skills.content)"></span>
-    </div>
-  </card>
+  <Card title="核心技能">
+    <dl class="skills-list"><div v-for="skill in list" :key="skill.title"><dt>{{ skill.title }}</dt><dd><RichText :text="skill.content" /></dd></div></dl>
+  </Card>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import Card from '../Card.vue';
-import { addTag } from '@/utils/tools';
+import RichText from '../RichText.vue';
 import { list } from './list';
 </script>
-
-<style lang="scss" scoped>
-.skills {
-  padding-top: 35px;
-}
-.skill {
-  margin-bottom: 10px;
-}
-.blod {
-  font-weight: 800;
-}
-</style>

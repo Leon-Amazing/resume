@@ -9,8 +9,7 @@ npm run build
 # 进入生成的文件夹
 cd dist
 
-git init
-git add -A
+git status
+git add .
 git commit -m 'deploy'
-
-git push -f https://github.com/Leon-Amazing/resume.git master:gh-pages
+git push

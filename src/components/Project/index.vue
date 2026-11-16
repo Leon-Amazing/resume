@@ -1,44 +1,17 @@
 <template>
-  <card title="项目经历" class="project">
-    <div class="project-item" v-for="(project, idx) in list" :key="idx">
-      <div class="project-title">
-        <h3>{{ project.title.name }}</h3>
-        <h3>{{ project.title.date }}</h3>
-      </div>
-      <ul class="project-desc" v-for="(content, idx) in project.content" :key="idx">
-        <li>
-          <h4>{{ content.title }}</h4>
-          <div>
-            <p v-for="(item, idx) in content.children" :key="idx" v-html="addTag(item)"></p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </card>
+  <Card title="项目经历">
+    <article class="entry project-entry" v-for="(project, index) in list" :key="project.title.name">
+      <div class="entry-heading"><h3><span class="project-number">{{ String(index + 1).padStart(2, '0') }}</span>{{ project.title.name }}</h3></div>
+      <p class="date project-date">项目时间：{{ project.title.date }}｜{{ project.title.company }}</p>
+      <p class="project-description">{{ project.description }}</p>
+      <p class="tech-stack"><strong>技术栈</strong>{{ project.stack }}</p>
+      <ul class="achievements"><li v-for="content in project.content" :key="content"><RichText :text="content" /></li></ul>
+    </article>
+  </Card>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import Card from '../Card.vue';
-import { addTag } from '@/utils/tools';
+import RichText from '../RichText.vue';
 import { list } from './list';
 </script>
-
-<style lang="scss" scoped>
-.project-item {
-  margin: 10px 0;
-  margin-bottom: 12px;
-}
-.project-title {
-  padding-right: 40px;
-  display: flex;
-  justify-content: space-between;
-  font-weight: 800;
-}
-
-.project-desc {
-  padding-right: 40px;
-}
-ul {
-  padding-left: 20px;
-}
-</style>

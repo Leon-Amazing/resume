@@ -7,7 +7,7 @@ import { resolve } from 'path';
 export default defineConfig({
   plugins: [vue()],
 
-  base: 'resume',
+  base: '/resume/',
 
   //进行配置
   resolve: {
