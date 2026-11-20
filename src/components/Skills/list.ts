@@ -17,6 +17,10 @@ export const list = [
   },
   {
     title: '协作交付',
-    content: 'Git、GitLab CI、需求评审、方案设计、接口联调、回归验证与线上问题排查；**英语 CET-6**。',
+    content: 'Git、GitLab CI、需求评审、方案设计、接口联调、回归验证与线上问题排查。',
+  },
+  {
+    title: '英语能力',
+    content: '可用英语进行日常工作交流，良好的英文文档阅读能力，CET-6。',
   },
 ];

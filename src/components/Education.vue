@@ -1,6 +1,9 @@
 <template>
   <Card title="教育经历">
     <div class="entry-heading education"><h3>{{ profile.education.school }}<span class="degree">{{ profile.education.degree }}</span></h3><span class="date">{{ profile.education.date }}</span></div>
+    <ul class="achievements">
+      <li v-for="honor in profile.education.honors" :key="honor">{{ honor }}</li>
+    </ul>
   </Card>
 </template>
 
